@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <title>PlayMart | Cart</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar flex flex-row align-center justify-between">
+            <div class="navbar-left">
+                <a href="../index.html" class="logo flex-center">
+                    <i class="fas fa-khanda"></i>
+                    <h1>PlayMart</h1>
+                </a>
+            </div>
+            <div class="navbar-mid">
+                <div class="search-bar flex-center">
+                    <input type="search" name="searchbar" placeholder="Search for products..." id="search-bar">
+                    <button class="btn search"><i class="fas fa-search icon"></i></button>
+                </div>
+            </div>
+            <div class="navbar-right flex-center">
+                <a href="./login.html" class="btn btn-login">LogIn / SignUp</a>
+                <a href="wishlist.html" class="btn btn-link">
+                    <i class="fas fa-heart icon"></i>
+                    <span class="small">WishList</span>
+                    <span class="badge small">5</span>
+                </a>
+                <a href="./cart.html" class="btn btn-link">
+                    <i class="fas fa-shopping-cart icon"></i>
+                    <span class="small">Your Cart</span>
+                    <span class="badge small">7</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main wishlist flex flex-col align-center">
+        <h1>Cart</h1>
+        <section class="cart-content flex-center align-start">
+            <div class="cart-left flex-center flex-col align-stretch">
+                <div class="address flex-center justify-between">
+                    <div class="address-left flex-center flex-col align-start">
+                        <p class="h4">Deliver To: </p>
+                        <p class="small">Hamza Rarani, Amravati, 444904</p>
+                        <p class="small">Amravati Road, Weekly Bazar, Chandur Rly</p>
+                    </div>
+                    <div class="address-right">
+                        <a href="#" class="btn btn-link flex-center"><i class="fa-solid fa-pen"></i></a>
+                    </div>
+                </div>
+                <div class="card card-horizontal removable-card">
+                    <span class="card-dismiss"><i class="fas fa-times"></i></span>
+                    <div class="card-header">
+                        <div class="card-img">
+                            <img src="../products/amongus.png" alt="card image">
+                        </div>
+                        <div class="card-body">
+                            <div class="titles">
+                                <h3>Among Us</h3>
+                                <h5>₹324</h5>
+                            </div>
+                            <div class="quantity flex-center">
+                                <label for="password">Quantity: </label>
+                                <input type="number" class="number" min="0" value="1">
+                            </div>
+                            <div class="card-tools">
+                                <div class="buttons">
+                                    <button class="btn">Add To Wishlist</button>
+                                </div>
+                                <div class="icons">
+                                    <div class="icon-container"><i class="fas fa-share-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-horizontal removable-card">
+                    <span class="card-dismiss"><i class="fas fa-times"></i></span>
+                    <div class="card-header">
+                        <div class="card-img">
+                            <img src="../merchandaccessories/redgearwired.jpg" alt="card image">
+                        </div>
+                        <div class="card-body">
+                            <div class="titles">
+                                <h3>Readgear Gaming Mouse</h3>
+                                <h5>₹1200</h5>
+                            </div>
+                            <div class="quantity">
+                                <label for="password">Quantity: </label>
+                                <input type="number" class="number" min="0" value="1">
+                            </div>
+                            <div class="card-tools">
+                                <div class="buttons">
+                                    <button class="btn">Add To Wishlist</button>
+                                </div>
+                                <div class="icons">
+                                    <div class="icon-container"><i class="fas fa-share-alt"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-right flex-center flex-col align-start">
+                <h3>Coupons / Promo Code</h3>
+                <form class="coupon-form">
+                    <div class="form-item flex-center justify-between">
+                        <input type="text" placeholder="Enter the code">
+                        <button type="submit" class="flex-center"><i class="fa-solid fa-tag"></i> Apply</button>
+                    </div>
+                </form>
+                <h3>Purchase Details: <span class="small">( 2 items )</span></h3>
+                <div class="bill flex-center flex-col align-stretch">
+                    <div class="bill-item flex-center justify-between">
+                        <div class="bill-item-left">Total MRP</div>
+                        <div class="bill-item-right">₹1524</div>
+                    </div>
+                    <div class="bill-item flex-center justify-between">
+                        <div class="bill-item-left">Coupon Discount</div>
+                        <div class="bill-item-right">₹0</div>
+                    </div>
+                    <div class="bill-item flex-center justify-between">
+                        <div class="bill-item-left">Delivery Charges</div>
+                        <div class="bill-item-right">₹50</div>
+                    </div>
+                    <div class="bill-item flex-center justify-between">
+                        <div class="bill-item-left">Grand Total</div>
+                        <div class="bill-item-right">₹1574</div>
+                    </div>
+                </div>
+                <button class="btn btn-link">Place Order</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-nav flex align-start justify-around">
+            <div class="footer-nav-item flex-center flex-col align-start">
+                <h3>Products We Offer</h3>
+                <div class="footer-list flex-center flex-col align-start">
+                    <a href="#" class="footer-item">Sports Equipments</a>
+                    <a href="#" class="footer-item">Games</a>
+                    <a href="#" class="footer-item">Gaming Accessories</a>
+                    <a href="#" class="footer-item">Merchandise</a>
+                </div>
+            </div>
+            <div class="footer-nav-item flex-center flex-col align-start">
+                <h3>Get to know us</h3>
+                <div class="footer-list flex-center flex-col align-start">
+                    <a href="#" class="footer-item">About Us</a>
+                    <a href="#" class="footer-item">Contact Us</a>
+                    <a href="#" class="footer-item">Press</a>
+                </div>
+            </div>
+            <div class="footer-nav-item flex-center flex-col align-start">
+                <h3>Help</h3>
+                <div class="footer-list flex-center flex-col align-start">
+                    <a href="#" class="footer-item">Payment</a>
+                    <a href="#" class="footer-item">Shipping</a>
+                    <a href="#" class="footer-item">Cancellation & return</a>
+                    <a href="#" class="footer-item">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-nav-item flex-center flex-col align-start">
+                <h3>Social</h3>
+                <div class="footer-list flex-center flex-col align-start">
+                    <a href="#" class="footer-item"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#" class="footer-item"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#" class="product"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="../index.html" class="logo">
+            <p>&copy; 2022 PlayMart</p>
+        </a>
+    </footer>
+</body>
+</html>

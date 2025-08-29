@@ -1,0 +1,199 @@
+@import './css/imports.css';
+
+/* Header */
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    border-bottom: 2px solid var(--dark-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.logo > i {
+    font-size: 2rem;
+}
+
+.logo > h1 {
+    font-family: var(--font-quintessential);
+}
+
+.search-bar {
+    border-bottom: 1px solid var(--dark-color);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+#search-bar {
+    width: 25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: var(--white-color);
+    color: var(--dark-color);
+    transition: var(--default-transition);
+}
+
+#search-bar:hover,
+#search-bar:focus {
+    width: 30rem;
+}
+
+#search-bar::placeholder {
+    color: var(--dark-color);
+}
+
+.search {
+    background: transparent;
+    color: var(--dark-color);
+    padding: 0.5rem;
+}
+
+.navbar-right {
+    gap: 1.75rem;
+}
+
+/* Main */
+
+/* Categories */
+.main {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.category {
+    position: relative;
+    padding: 1rem 1.5rem;
+    gap: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.category > h1,
+.category > a {
+    z-index: 2;
+}
+
+.fader {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+}
+
+.sports-eqp {
+    background: url('./resources/sportsimg.jpg') center;
+    color: var(--white-color)
+}
+
+.games {
+    background: url('./resources/gaming.jpg') center;
+    color: var(--white-color)
+}
+
+.accessories {
+    background: url('./resources/gamingaccessories.jpg') center;
+    color: var(--white-color)
+}
+
+.merch {
+    background: url('./resources/merchandise.jpg') center;
+    color: var(--white-color)
+}
+
+.btn-to {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: var(--default-transition);
+    border: 2px solid var(--light-color);
+    font-size: 1.25rem;
+    box-shadow: rgba(12, 37, 105, 0.56) 0px 22px 70px 4px;
+}
+
+.btn-to:hover {
+    transform: scale(1.1);
+}
+
+/* Trending */
+.trendings {
+    width: 100%;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.trendings > h1 {
+    align-self: center;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.trendings > h2 {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.trending-sports-eqp,
+.trending-games,
+.trending-accessories,
+.trending-merchandise {
+    width: 100%;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding: 0.5rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+/* Rating Stars */
+.starred {
+    color: var(--starred-color);
+}
+
+/* Footer */
+
+.footer {
+    background: var(--secondary-color);
+}
+
+.to-top {
+    width: 100%;
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 0.75rem 1rem;
+}
+
+.footer-nav {
+    padding: 2rem 0;
+}
+
+.footer-nav-item {
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-list {
+    gap: 0.5rem;
+}
+
+.footer-list > a > i {
+    font-size: 2rem;
+}
+
+.footer > .logo {
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--light-color);
+    color: var(--light-color);
+    text-align: center;
+}

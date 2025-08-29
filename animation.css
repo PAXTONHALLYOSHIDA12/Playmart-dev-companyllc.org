@@ -1,0 +1,36 @@
+title
+{
+text-align:center;
+background-color: #f0f0f0;
+}
+
+body
+{
+    text-align : center;
+    color : grey;
+}
+
+c1 
+{
+    width:20px;
+    height:20px;
+    border: 190px solid #000;
+    position :relative ;
+    padding :100px;
+}
+
+box 
+{
+position :absolute ;
+top :200px;
+left:34px;
+background-color:#095648;
+padding:42px;
+font-size: 18px;
+font-weight:bold;
+}
+
+.alignleft
+{
+    text-align:left;
+}
